@@ -32,14 +32,14 @@ CREATE TABLE Subject
          no_of_students NUMBER(200),
          no_of_coursework INT,
          semester_id INT,
-         lecturer_id INT 
+         lecturer_id INT,
          FOREIGN KEY (lecturer_id) REFERENCES Lecturer(lecturer_id));
 
 -- Table representing association between Students and Subjects 
 CREATE TABLE StudentSubjects
         (student_id INT,
-         subject_id INT 
-         FOREIGN KEY (student_id) REFERENCES Student(student_id)
+         subject_id INT,
+         FOREIGN KEY (student_id) REFERENCES Student(student_id),
          FOREIGN KEY (subject_id) REFERENCES Subject(subject_id));
 
 -- Table representing Lecturers
@@ -54,14 +54,17 @@ CREATE TABLE Lecturer
 -- Table representing the association between Lecturers and Subjects
 CREATE TABLE LecturerSubjects
         (lecturer_id INT,
-         subject_id INT);
+         subject_id INT,
+         FOREIGN KEY (lecturer_id) REFERENCES Lecturer(lecturer_id),
+         FOREIGN KEY (subject_id) REFERENCES Subject(subject_id));
 
 -- Table representing Courseworks
 CREATE TABLE Coursework
         (coursework_id INT PRIMARY KEY,
          subject_id INT,
          due_date DATE,
-         marks INT);
+         marks NUMBER(100),
+         FOREIGN KEY (subject_id) REFERENCES Subject(subject_id));
 
 -- Table representing Exam
 CREATE TABLE Exam
@@ -72,7 +75,7 @@ CREATE TABLE Exam
 -- Table representing Questions
 CREATE TABLE Question
         (question_id INT PRIMARY KEY,
-         question VARCHAR2(3000)
+         question VARCHAR2(3000),
          marks INT );
 
 -- Table representing the association between Exams and Questions 
@@ -83,8 +86,8 @@ CREATE TABLE ExamQuestions
 -- Table representing association between Courseworks and Questions
 CREATE TABLE CourseworkQuestion
         (coursework_id INT,
-         question_id INT
-         FOREIGN KEY (coursework_id) REFERENCES Coursework(coursework_id)
+         question_id INT,
+         FOREIGN KEY (coursework_id) REFERENCES Coursework(coursework_id),
          FOREIGN KEY (question_id) REFERENCES Question(question_id));
 -- Table representing Semester
 CREATE TABLE Semester
