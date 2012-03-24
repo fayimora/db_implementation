@@ -66,26 +66,26 @@ INSERT INTO Student VALUES( '73701', 'Idella Reilly', TO_DATE('11-06-91', 'DD-MM
 PROMPT Finished populating Student table
 
 PROMPT Populating Subjects table. Please wait ...
-INSERT INTO Subject VALUES( 'DCS111', 'Computer Architecture',         '20', '', '1', '' );
-INSERT INTO Subject VALUES( 'DCS100', 'Procedural Programming',        '20', '', '1', '' );
-INSERT INTO Subject VALUES( 'DCS113', 'Logic and Discrete Structures', '20', '', '1', '' );
-INSERT INTO Subject VALUES( 'DCS103', 'Language and comunication',     '20', '', '2', '' );
-INSERT INTO Subject VALUES( 'DCS104', 'Object Oriented Programming',   '20', '', '2', '' );
-INSERT INTO Subject VALUES( 'DCS129', 'Probability and Matrices',      '20', '', '2', '' );
+INSERT INTO Subject VALUES( 'DCS111', 'Computer Architecture',         '20', '', '1', '6' );
+INSERT INTO Subject VALUES( 'DCS100', 'Procedural Programming',        '20', '', '1', '2' );
+INSERT INTO Subject VALUES( 'DCS113', 'Logic and Discrete Structures', '20', '', '1', '4' );
+INSERT INTO Subject VALUES( 'DCS103', 'Language and comunication',     '20', '', '2', '4' );
+INSERT INTO Subject VALUES( 'DCS104', 'Object Oriented Programming',   '20', '', '2', '2' );
+INSERT INTO Subject VALUES( 'DCS129', 'Probability and Matrices',      '20', '', '2', '3' );
 
-INSERT INTO Subject VALUES( 'DCS200', 'Networks and Operating Systems','', '', '1', '' );
-INSERT INTO Subject VALUES( 'DCS210', 'Algorithms & Data Structures',  '', '', '1', '' );
-INSERT INTO Subject VALUES( 'DCS225', 'Database Systems',              '', '', '1', '' );
-INSERT INTO Subject VALUES( 'DCS235', 'Software Engineering',          '', '', '2', '' );
-INSERT INTO Subject VALUES( 'DCS224', 'Graphical User Interface',      '', '', '2', '' );
-INSERT INTO Subject VALUES( 'ELE404', 'Internet Applications',         '', '', '2', '' );
-
-INSERT INTO Subject VALUES( 'DCS360', 'Project',                       '', '', '1', '' );
-INSERT INTO Subject VALUES( 'DCS339', 'C++ for Image Processing',      '', '', '1', '' );
-INSERT INTO Subject VALUES( 'DCS310', 'Systems Analysis',              '', '', '1', '' );
-INSERT INTO Subject VALUES( 'DCS337', 'Software Risk Assesment',       '', '', '2', '' );
-INSERT INTO Subject VALUES( 'DCS041', 'Machine Learning',              '', '', '2', '' );
-INSERT INTO Subject VALUES( 'DCS306', 'High Performance Computing',    '', '', '2', '' );
+INSERT INTO Subject VALUES( 'DCS200', 'Networks and Operating Systems','20', '', '1', '7' );
+INSERT INTO Subject VALUES( 'DCS210', 'Algorithms & Data Structures',  '20', '', '1', '6' );
+INSERT INTO Subject VALUES( 'DCS225', 'Database Systems',              '20', '', '1', '1' );
+INSERT INTO Subject VALUES( 'DCS235', 'Software Engineering',          '20', '', '2', '2' );
+INSERT INTO Subject VALUES( 'DCS224', 'Graphical User Interface',      '20', '', '2', '9' );
+INSERT INTO Subject VALUES( 'ELE404', 'Internet Applications',         '20', '', '2', '8' );
+20
+INSERT INTO Subject VALUES( 'DCS360', 'Project',                       '20', '', '1', '10' );
+INSERT INTO Subject VALUES( 'DCS339', 'C++ for Image Processing',      '20', '', '1', '11' );
+INSERT INTO Subject VALUES( 'DCS310', 'Systems Analysis',              '20', '', '1', '12' );
+INSERT INTO Subject VALUES( 'DCS337', 'Software Risk Assesment',       '20', '', '2', '12' );
+INSERT INTO Subject VALUES( 'DCS041', 'Machine Learning',              '20', '', '2', '1' );
+INSERT INTO Subject VALUES( 'DCS306', 'High Performance Computing',    '20', '', '2', '11' );
 PROMPT Finished populating Subjects table
 
 PROMPT Populating Lecturers table
@@ -105,6 +105,7 @@ PROMPT Finished populating Lecturers table
 
 PROMPT Finished populating LecturerSubjects table
 INSERT INTO LecturerSubjects VALUES( '2',  'DCS100');
+INSERT INTO LecturerSubjects VALUES( '6',  'DCS111');
 INSERT INTO LecturerSubjects VALUES( '2',  'DCS104');
 INSERT INTO LecturerSubjects VALUES( '2',  'DCS235');
 INSERT INTO LecturerSubjects VALUES( '1',  'DCS225');
@@ -121,6 +122,7 @@ INSERT INTO LecturerSubjects VALUES( '11',  'DCS339');
 INSERT INTO LecturerSubjects VALUES( '12',  'DCS337');
 INSERT INTO LecturerSubjects VALUES( '12',  'DCS310');
 INSERT INTO LecturerSubjects VALUES( '11',  'DCS306');
+INSERT INTO LecturerSubjects VALUES( '1',  'DCS041');
 PROMPT populating LecturerSubjects table
 
 
