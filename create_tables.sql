@@ -1,12 +1,14 @@
 SET TERMOUT ON
-PROMPT Building tables. Please wait.
+PROMPT Building tables. Please wait...
 
 -- Drop all tables incase any already exists
 DROP TABLE Student;
 DROP TABLE Subject;
 DROP TABLE StudentSubjects;
 DROP TABLE Lecturer;
+DROP TABLE LecturerSubjects;
 DROP TABLE Coursework;
+DROP TABLE CourseworkQuestion;
 DROP TABLE Exam;
 DROP TABLE Question;
 DROP TABLE ExamQuestions;
