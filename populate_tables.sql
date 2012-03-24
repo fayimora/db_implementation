@@ -79,7 +79,7 @@ INSERT INTO Subject VALUES( 'DCS225', 'Database Systems',              '20', '',
 INSERT INTO Subject VALUES( 'DCS235', 'Software Engineering',          '20', '', '2', '2' );
 INSERT INTO Subject VALUES( 'DCS224', 'Graphical User Interface',      '20', '', '2', '9' );
 INSERT INTO Subject VALUES( 'ELE404', 'Internet Applications',         '20', '', '2', '8' );
-20
+
 INSERT INTO Subject VALUES( 'DCS360', 'Project',                       '20', '', '1', '10' );
 INSERT INTO Subject VALUES( 'DCS339', 'C++ for Image Processing',      '20', '', '1', '11' );
 INSERT INTO Subject VALUES( 'DCS310', 'Systems Analysis',              '20', '', '1', '12' );
