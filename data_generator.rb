@@ -1,11 +1,12 @@
 require 'faker'
 amount = 60
 
-
-12.times do |i|
-  name, phone_number = "Prof. "+Faker::Name.name, Faker::PhoneNumber.phone_number
-  email = Faker::Internet.email(name)
-  puts "INSERT INTO Lecturer VALUES( '#{i+1}', '#{name}', '#{email}', '#{phone_number}', TO_DATE('11-11-11', 'DD-MM-YY') );"
+def lecturer
+    12.times do |i|
+    name, phone_number = "Prof. "+Faker::Name.name, Faker::PhoneNumber.phone_number
+    email = Faker::Internet.email(name)
+    puts "INSERT INTO Lecturer VALUES( '#{i+1}', '#{name}', '#{email}', '#{phone_number}', TO_DATE('11-11-11', 'DD-MM-YY') );"
+  end
 end
 
 def student
