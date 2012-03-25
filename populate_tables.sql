@@ -66,27 +66,36 @@ INSERT INTO Student VALUES( '73701', 'Idella Reilly', TO_DATE('11-06-91', 'DD-MM
 PROMPT Finished populating Student table
 
 PROMPT Populating Subjects table. Please wait ...
-INSERT INTO Subject VALUES( 'DCS111', 'Computer Architecture',         '20', '', '1', '6' );
-INSERT INTO Subject VALUES( 'DCS100', 'Procedural Programming',        '20', '', '1', '2' );
-INSERT INTO Subject VALUES( 'DCS113', 'Logic and Discrete Structures', '20', '', '1', '4' );
-INSERT INTO Subject VALUES( 'DCS103', 'Language and comunication',     '20', '', '2', '4' );
-INSERT INTO Subject VALUES( 'DCS104', 'Object Oriented Programming',   '20', '', '2', '2' );
-INSERT INTO Subject VALUES( 'DCS129', 'Probability and Matrices',      '20', '', '2', '3' );
+INSERT INTO Subject VALUES( 'DCS111', 'Computer Architecture',         '20', '3', '1', '6' );
+INSERT INTO Subject VALUES( 'DCS100', 'Procedural Programming',        '20', '3', '1', '2' );
+INSERT INTO Subject VALUES( 'DCS113', 'Logic and Discrete Structures', '20', '4', '1', '4' );
+INSERT INTO Subject VALUES( 'DCS103', 'Language and comunication',     '20', '4', '2', '4' );
+INSERT INTO Subject VALUES( 'DCS104', 'Object Oriented Programming',   '20', '3', '2', '2' );
+INSERT INTO Subject VALUES( 'DCS129', 'Probability and Matrices',      '20', '3', '2', '3' );
 
-INSERT INTO Subject VALUES( 'DCS200', 'Networks and Operating Systems','20', '', '1', '7' );
-INSERT INTO Subject VALUES( 'DCS210', 'Algorithms & Data Structures',  '20', '', '1', '6' );
-INSERT INTO Subject VALUES( 'DCS225', 'Database Systems',              '20', '', '1', '1' );
-INSERT INTO Subject VALUES( 'DCS235', 'Software Engineering',          '20', '', '2', '2' );
-INSERT INTO Subject VALUES( 'DCS224', 'Graphical User Interface',      '20', '', '2', '9' );
-INSERT INTO Subject VALUES( 'ELE404', 'Internet Applications',         '20', '', '2', '8' );
+INSERT INTO Subject VALUES( 'DCS200', 'Networks and Operating Systems','20', '4', '1', '7' );
+INSERT INTO Subject VALUES( 'DCS210', 'Algorithms & Data Structures',  '20', '4', '1', '6' );
+INSERT INTO Subject VALUES( 'DCS225', 'Database Systems',              '20', '3', '1', '1' );
+INSERT INTO Subject VALUES( 'DCS235', 'Software Engineering',          '20', '3', '2', '2' );
+INSERT INTO Subject VALUES( 'DCS224', 'Graphical User Interface',      '20', '4', '2', '9' );
+INSERT INTO Subject VALUES( 'ELE404', 'Internet Applications',         '20', '4', '2', '8' );
 
-INSERT INTO Subject VALUES( 'DCS360', 'Project',                       '20', '', '1', '10' );
-INSERT INTO Subject VALUES( 'DCS339', 'C++ for Image Processing',      '20', '', '1', '11' );
-INSERT INTO Subject VALUES( 'DCS310', 'Systems Analysis',              '20', '', '1', '12' );
-INSERT INTO Subject VALUES( 'DCS337', 'Software Risk Assesment',       '20', '', '2', '12' );
-INSERT INTO Subject VALUES( 'DCS041', 'Machine Learning',              '20', '', '2', '1' );
-INSERT INTO Subject VALUES( 'DCS306', 'High Performance Computing',    '20', '', '2', '11' );
+INSERT INTO Subject VALUES( 'DCS360', 'Project',                       '20', '4', '1', '10' );
+INSERT INTO Subject VALUES( 'DCS339', 'C++ for Image Processing',      '20', '4', '1', '11' );
+INSERT INTO Subject VALUES( 'DCS310', 'Systems Analysis',              '20', '3', '1', '12' );
+INSERT INTO Subject VALUES( 'DCS337', 'Software Risk Assesment',       '20', '3', '2', '12' );
+INSERT INTO Subject VALUES( 'DCS041', 'Machine Learning',              '20', '4', '2', '1' );
+INSERT INTO Subject VALUES( 'DCS306', 'High Performance Computing',    '20', '3', '2', '11' );
 PROMPT Finished populating Subjects table
+
+PROMPT populating StudentSubjects table
+
+--i := 0;
+--myLoop1:
+--FOR module AS SELECT student_id FROM Student DO
+--
+END FOR myLoop1:
+PROMPT Finished populating StudentSubjects table
 
 PROMPT Populating Lecturers table
 INSERT INTO Lecturer VALUES( '1',  'Mr. Ottis Fahey I',         'fahey.i.ottis@jacobsonkonopelski.info',    '542-265-0135', TO_DATE('11-11-11', 'DD-MM-YY') );
@@ -125,6 +134,70 @@ INSERT INTO LecturerSubjects VALUES( '11',  'DCS306');
 INSERT INTO LecturerSubjects VALUES( '1',  'DCS041');
 PROMPT populating LecturerSubjects table
 
-
+PROMPT Populating Coursework table.
+INSERT INTO Coursework VALUES( '001', 'DCS111',TO_DATE('30-10-2011', 'DD-MM-YY'), '10', ); 
+INSERT INTO Coursework VALUES( '002', 'DCS111',TO_DATE('15-11-2011', 'DD-MM-YY'), '10', );
+INSERT INTO Coursework VALUES( '003', 'DCS111',TO_DATE('22-12-2011', 'DD-MM-YY'), '30', ); 
+INSERT INTO Coursework VALUES( '101', 'DCS100',TO_DATE('30-10-2011', 'DD-MM-YY'), '10', ); 
+INSERT INTO Coursework VALUES( '102', 'DCS100',TO_DATE('22-11-2011', 'DD-MM-YY'), '10', );
+INSERT INTO Coursework VALUES( '103', 'DCS100',TO_DATE('30-12-2011', 'DD-MM-YY'), '30', ); 
+INSERT INTO Coursework VALUES( '201', 'DCS113',TO_DATE('30-10-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '202', 'DCS113',TO_DATE('22-11-2011', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '203', 'DCS113',TO_DATE('01-12-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '204', 'DCS113',TO_DATE('25-12-2011', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '301', 'DCS103',TO_DATE('12-01-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '302', 'DCS103',TO_DATE('30-02-2012', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '303', 'DCS103',TO_DATE('11-03-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '304', 'DCS103',TO_DATE('26-03-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '401', 'DCS104',TO_DATE('16-01-2012', 'DD-MM-YY'), '10', ); 
+INSERT INTO Coursework VALUES( '402', 'DCS104',TO_DATE('01-02-2012', 'DD-MM-YY'), '10', );
+INSERT INTO Coursework VALUES( '403', 'DCS104',TO_DATE('30-03-2012', 'DD-MM-YY'), '30', ); 
+INSERT INTO Coursework VALUES( '501', 'DCS129',TO_DATE('17-01-2012', 'DD-MM-YY'), '10', ); 
+INSERT INTO Coursework VALUES( '502', 'DCS129',TO_DATE('02-03-2012', 'DD-MM-YY'), '10', );
+INSERT INTO Coursework VALUES( '503', 'DCS129',TO_DATE('29-03-2012', 'DD-MM-YY'), '30', ); 
+INSERT INTO Coursework VALUES( '601', 'DCS200',TO_DATE('07-11-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '602', 'DCS200',TO_DATE('28-11-2011', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '603', 'DCS200',TO_DATE('12-12-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '604', 'DCS200',TO_DATE('22-12-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '701', 'DCS210',TO_DATE('09-11-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '702', 'DCS210',TO_DATE('27-01-2011', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '703', 'DCS210',TO_DATE('13-12-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '704', 'DCS210',TO_DATE('25-12-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '801', 'DCS225',TO_DATE('07-11-2011', 'DD-MM-YY'), '10', ); 
+INSERT INTO Coursework VALUES( '802', 'DCS225',TO_DATE('19-11-2011', 'DD-MM-YY'), '10', );
+INSERT INTO Coursework VALUES( '803', 'DCS225',TO_DATE('28-12-2011', 'DD-MM-YY'), '30', ); 
+INSERT INTO Coursework VALUES( '901', 'DCS235',TO_DATE('22-01-2012', 'DD-MM-YY'), '10', ); 
+INSERT INTO Coursework VALUES( '902', 'DCS235',TO_DATE('12-02-2012', 'DD-MM-YY'), '10', );
+INSERT INTO Coursework VALUES( '903', 'DCS235',TO_DATE('24-03-2012', 'DD-MM-YY'), '30', ); 
+INSERT INTO Coursework VALUES( '1101', 'DCS224',TO_DATE('22-01-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1102', 'DCS224',TO_DATE('02-02-2012', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '1103', 'DCS224',TO_DATE('16-03-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1104', 'DCS224',TO_DATE('21-03-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1201', 'ELE404',TO_DATE('19-01-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1202', 'ELE404',TO_DATE('03-02-2012', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '1203', 'ELE404',TO_DATE('11-03-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1204', 'ELE404',TO_DATE('30-03-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1301', 'DCS360',TO_DATE('29-10-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1302', 'DCS360',TO_DATE('01-11-2011', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '1303', 'DCS360',TO_DATE('22-11-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1304', 'DCS360',TO_DATE('24-12-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1401', 'DCS339',TO_DATE('22-10-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1402', 'DCS339',TO_DATE('02-11-2011', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '1403', 'DCS339',TO_DATE('12-11-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1404', 'DCS339',TO_DATE('22-12-2011', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1501', 'DCS310',TO_DATE('09-11-2011', 'DD-MM-YY'), '10', ); 
+INSERT INTO Coursework VALUES( '1502', 'DCS310',TO_DATE('22-11-2011', 'DD-MM-YY'), '10', );
+INSERT INTO Coursework VALUES( '1503', 'DCS310',TO_DATE('23-12-2011', 'DD-MM-YY'), '30', );
+INSERT INTO Coursework VALUES( '1601', 'DCS337',TO_DATE('27-01-2012', 'DD-MM-YY'), '10', ); 
+INSERT INTO Coursework VALUES( '1602', 'DCS337',TO_DATE('12-02-2012', 'DD-MM-YY'), '10', );
+INSERT INTO Coursework VALUES( '1603', 'DCS337',TO_DATE('20-03-2012', 'DD-MM-YY'), '30', );
+INSERT INTO Coursework VALUES( '1701', 'DCS041',TO_DATE('19-01-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1702', 'DCS041',TO_DATE('03-02-2012', 'DD-MM-YY'), '15', );
+INSERT INTO Coursework VALUES( '1703', 'DCS041',TO_DATE('22-02-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1704', 'DCS041',TO_DATE('30-03-2012', 'DD-MM-YY'), '15', ); 
+INSERT INTO Coursework VALUES( '1801', 'DCS306',TO_DATE('25-01-2012', 'DD-MM-YY'), '10', ); 
+INSERT INTO Coursework VALUES( '1802', 'DCS306',TO_DATE('22-02-2012', 'DD-MM-YY'), '10', );
+INSERT INTO Coursework VALUES( '1803', 'DCS306',TO_DATE('28-03-2012', 'DD-MM-YY'), '30', );
+PROMPT Finished populating Coursework table
 
 
