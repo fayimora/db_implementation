@@ -1,0 +1,12 @@
+INSERT INTO Lecturer VALUES( '1', 'Prof. Ottis Fahey I', 'fahey.i.prof.ottis@jacobsonkonopelski.info', '542-265-0135', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '2', 'Prof. Shaina Torp MD', 'md_torp_shaina_prof@trompsmitham.com', '129-615-8639 x701', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '3', 'Prof. Josianne Fisher MD', 'fisher_josianne_md_prof@rowe.info', '903.657.8675', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '4', 'Prof. Mrs. Timmy Rempel', 'rempel_timmy_prof_mrs@konopelski.biz', '(634)527-9278 x9041', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '5', 'Prof. Shayna Smitham', 'smitham_shayna_prof@hamill.org', '(581)070-3813', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '6', 'Prof. Waylon Turner MD', 'turner.prof.md.waylon@schmeler.net', '(529)876-8390', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '7', 'Prof. Dr. Ismael Wunsch', 'prof.dr.wunsch.ismael@rowe.name', '408-547-2780', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '8', 'Prof. Cayla Padberg', 'prof_cayla_padberg@mertz.com', '972.313.2600 x47548', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '9', 'Prof. Unique Ratke', 'ratke.unique.prof@gerhold.biz', '842-758-7283 x625', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '10', 'Prof. Claudie Littel', 'littel_claudie_prof@willmsrunolfsdottir.info', '1-951-590-5220', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '11', 'Prof. Micah White Sr.', 'sr.prof.white.micah@okunevamonahan.name', '574.006.7239', TO_DATE('11-11-11', 'DD-MM-YY') );
+INSERT INTO Lecturer VALUES( '12', 'Prof. Ms. Alison Fay', 'ms.fay.prof.alison@pollich.info', '(197)449-7834', TO_DATE('11-11-11', 'DD-MM-YY') );
