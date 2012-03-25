@@ -60,8 +60,7 @@ CREATE TABLE LecturerSubjects
 
 -- Table representing Courseworks
 CREATE TABLE Coursework
-        (id INT PRIMARY KEY
-         coursework_id INT,
+        (coursework_id INT PRIMARY KEY,
          subject_id INT,
          due_date DATE,
          marks NUMBER(100),
