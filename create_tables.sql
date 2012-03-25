@@ -60,7 +60,8 @@ CREATE TABLE LecturerSubjects
 
 -- Table representing Courseworks
 CREATE TABLE Coursework
-        (coursework_id INT PRIMARY KEY,
+        (id INT PRIMARY KEY
+         coursework_id INT,
          subject_id INT,
          due_date DATE,
          marks NUMBER(100),
@@ -98,3 +99,7 @@ CREATE TABLE Year
         (degree VARCHAR2(255));
 
 PROMPT Tables have been built. Thanks for waiting!
+
+
+COMMIT;
+SET TERMOUT OFF
