@@ -68,6 +68,22 @@ INSERT INTO Student VALUES('10630', 'Winfield Wisozk', TO_DATE('10-05-92', 'DD-M
 INSERT INTO Student VALUES('73701', 'Idella Reilly', TO_DATE('11-06-91', 'DD-MM-YY'), '3', 'idella_reilly@denesik.name', '569.207.0254 x44158', 'Apt. 537 8654 West Centers' ); 
 PROMPT Finished populating Student table
 
+PROMPT Populating Lecturers table
+INSERT INTO Lecturer VALUES( '1', 'Dr. Dasia Beier', 'prof_dasia_beier@dicki.com', TO_DATE('11-11-11', 'DD-MM-YY'), '(638)663-5148', 'Suite 456 5819 Connor Knoll' );
+INSERT INTO Lecturer VALUES( '2', 'Prof. Hobart Nikolaus', 'prof_nikolaus_hobart@jakubowskirohan.net', TO_DATE('11-11-11', 'DD-MM-YY'), '(666)497-7543', 'Apt. 795 21339 Hagenes Freeway' );
+INSERT INTO Lecturer VALUES( '3', 'Dr. Rossie Powlowski', 'rossie_prof_powlowski@schmidt.com', TO_DATE('11-11-11', 'DD-MM-YY'), '290-064-4207', 'Suite 163 15654 Vernice Squares' );
+INSERT INTO Lecturer VALUES( '4', 'Prof. Izaiah Beier', 'prof_izaiah_beier@robel.net', TO_DATE('11-11-11', 'DD-MM-YY'), '(596)028-3747 x340', 'Apt. 756 56816 Denesik Harbor' );
+INSERT INTO Lecturer VALUES( '5', 'Prof. Coleman OHara Sr.', 'prof.coleman.o.sr.hara@spencer.net', TO_DATE('11-11-11', 'DD-MM-YY'), '437.922.4679 x3129', 'Suite 790 25927 Alexanne Throughway' );
+INSERT INTO Lecturer VALUES( '6', 'Dr. Cole Carroll', 'carroll_prof_cole@spinkazemlak.biz', TO_DATE('11-11-11', 'DD-MM-YY'), '465-669-8074 x07978', 'Apt. 864 345 Jose Spur' );
+INSERT INTO Lecturer VALUES( '7', 'Prof. Torey Romaguera DDS', 'dds.torey.romaguera.prof@leannonklocko.name', TO_DATE('11-11-11', 'DD-MM-YY'), '(874)181-9282 x648', 'Apt. 561 66403 Ramiro Fork' );
+INSERT INTO Lecturer VALUES( '8', 'Prof. Wanda Kerluke', 'wanda.kerluke.prof@daugherty.biz', TO_DATE('11-11-11', 'DD-MM-YY'), '1-359-227-8838', 'Suite 911 739 Hubert Circle' );
+INSERT INTO Lecturer VALUES( '9', 'Prof. Mrs. Oscar Von', 'prof.oscar.von.mrs@schmitt.info', TO_DATE('11-11-11', 'DD-MM-YY'), '1-368-810-5536', 'Apt. 755 89244 Torrey Mount' );
+INSERT INTO Lecturer VALUES( '10', 'Prof. Raquel OReilly', 'reilly.o.raquel.prof@block.com', TO_DATE('11-11-11', 'DD-MM-YY'), '(526)092-7055 x82505', 'Suite 990 4589 Dietrich Mountain' );
+INSERT INTO Lecturer VALUES( '11', 'Dr. Franco Bartoletti', 'bartoletti.prof.franco@ankunding.com', TO_DATE('11-11-11', 'DD-MM-YY'), '740-742-5237 x709', 'Apt. 191 37751 Dallin Circle' );
+INSERT INTO Lecturer VALUES( '12', 'Prof. Mrs. Maria Waelchi', 'mrs.waelchi.prof.maria@gibson.com', TO_DATE('11-11-11', 'DD-MM-YY'), '(230)469-0749 x81675', 'Apt. 973 443 Barry Overpass' );
+PROMPT Finished populating Lecturers table
+
+
 PROMPT Populating Subjects table. Please wait ...
 INSERT INTO Subject VALUES( 'DCS111', 'Computer Architecture',         '20', '3', '1', '6' );
 INSERT INTO Subject VALUES( 'DCS100', 'Procedural Programming',        '20', '3', '1', '2' );
@@ -77,14 +93,14 @@ INSERT INTO Subject VALUES( 'DCS104', 'Object Oriented Programming',   '20', '3'
 INSERT INTO Subject VALUES( 'DCS129', 'Probability and Matrices',      '20', '3', '2', '3' );
 
 INSERT INTO Subject VALUES( 'DCS200', 'Networks and Operating Systems','20', '4', '1', '7' );
-INSERT INTO Subject VALUES( 'DCS210', 'Algorithms & Data Structures',  '20', '4', '1', '6' );
+INSERT INTO Subject VALUES( 'DCS210', 'Algorithms and Data Structures',  '20', '4', '1', '6' );
 INSERT INTO Subject VALUES( 'DCS225', 'Database Systems',              '20', '3', '1', '1' );
 INSERT INTO Subject VALUES( 'DCS235', 'Software Engineering',          '20', '3', '2', '2' );
 INSERT INTO Subject VALUES( 'DCS224', 'Graphical User Interface',      '20', '4', '2', '9' );
 INSERT INTO Subject VALUES( 'ELE404', 'Internet Applications',         '20', '4', '2', '8' );
 
 INSERT INTO Subject VALUES( 'DCS360', 'Project',                       '20', '4', '1', '10' );
-INSERT INTO Subject VALUES( 'DCS339', 'C++ for Image Processing',      '20', '4', '1', '11' );
+INSERT INTO Subject VALUES( 'DCS339', 'CPP for Image Processing',      '20', '4', '1', '11' );
 INSERT INTO Subject VALUES( 'DCS310', 'Systems Analysis',              '20', '3', '1', '12' );
 INSERT INTO Subject VALUES( 'DCS337', 'Software Risk Assesment',       '20', '3', '2', '12' );
 INSERT INTO Subject VALUES( 'DCS041', 'Machine Learning',              '20', '4', '2', '1' );
@@ -133,22 +149,7 @@ INSERT INTO StudentSubjects VALUES('58961','DCS306');
 PROMPT Finished populating StudentSubjects table
 
 
-PROMPT Populating Lecturers table
-INSERT INTO Lecturer VALUES( '1',  'Mr. Ottis Fahey I',         'fahey.i.ottis@jacobsonkonopelski.info',    '542-265-0135', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '2',  'Prof. Shaina Torp',         'torp_shaina@trompsmitham.com',             '129-615-8639', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '3',  'Dr. Josianne Fisher',       'fisher_josianne@rowe.info',                '903.657.8675', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '4',  'Prof. Mrs. Timmy Rempel',   'rempel_timmy@konopelski.biz',              '(634)527-9278', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '5',  'Prof. Shayna Smitham',      'smitham_shayna@hamill.org',           '(581)070-3813', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '6',  'Prof. Waylon Turner',       'turner.waylon@schmeler.net',               '(529)876-8390', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '7',  'Dr. Ismael Wunsch',         'wunsch.ismael@rowe.name',                  '408-547-2780', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '8',  'Prof. Cayla Padberg',       'cayla_padberg@mertz.com',             '972.313.2600', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '9',  'Dr. Unique Ratke',          'ratke.unique@gerhold.biz',            '842-758-7283', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '10', 'Mrs. Claudie Littel',       'littel_claudie@willmsrunolfsdottir.info',  '1-951-590-5220', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '11', 'Prof. Micah White',         'white.micah@okunevamonahan.name',          '574.006.7239', TO_DATE('11-11-11', 'DD-MM-YY') );
-INSERT INTO Lecturer VALUES( '12', 'Prof. Alison Fay',          'alison@pollich.info',                      '(197)449-7834', TO_DATE('11-11-11', 'DD-MM-YY') );
-PROMPT Finished populating Lecturers table
-
-PROMPT Finished populating LecturerSubjects table
+PROMPT populating LecturerSubjects table
 INSERT INTO LecturerSubjects VALUES( '2',  'DCS100');
 INSERT INTO LecturerSubjects VALUES( '6',  'DCS111');
 INSERT INTO LecturerSubjects VALUES( '2',  'DCS104');
@@ -157,7 +158,7 @@ INSERT INTO LecturerSubjects VALUES( '1',  'DCS225');
 INSERT INTO LecturerSubjects VALUES( '3',  'DCS129');
 INSERT INTO LecturerSubjects VALUES( '4',  'DCS113');
 INSERT INTO LecturerSubjects VALUES( '4',  'DCS103');
-INSERT INTO LecturerSubjects VALUES( '5',  'DCS150');
+--INSERT INTO LecturerSubjects VALUES( '5',  'DCS150');
 INSERT INTO LecturerSubjects VALUES( '6',  'DCS210');
 INSERT INTO LecturerSubjects VALUES( '7',  'DCS200');
 INSERT INTO LecturerSubjects VALUES( '8',  'ELE404');
@@ -168,76 +169,185 @@ INSERT INTO LecturerSubjects VALUES( '12',  'DCS337');
 INSERT INTO LecturerSubjects VALUES( '12',  'DCS310');
 INSERT INTO LecturerSubjects VALUES( '11',  'DCS306');
 INSERT INTO LecturerSubjects VALUES( '1',  'DCS041');
-PROMPT populating LecturerSubjects table
+PROMPT Finshed populating LecturerSubjects table
 
 CREATE SEQUENCE auto_increment_cw
     START WITH 1 INCREMENT BY 1 NOMAXVALUE;
 
 PROMPT Populating Coursework table.
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS111',TO_DATE('30-10-2011', 'DD-MM-YY'), '10', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS111',TO_DATE('15-11-2011', 'DD-MM-YY'), '10', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS111',TO_DATE('22-12-2011', 'DD-MM-YY'), '30', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS100',TO_DATE('30-10-2011', 'DD-MM-YY'), '10', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS100',TO_DATE('22-11-2011', 'DD-MM-YY'), '10', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS100',TO_DATE('30-12-2011', 'DD-MM-YY'), '30', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS113',TO_DATE('30-10-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS113',TO_DATE('22-11-2011', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS113',TO_DATE('01-12-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS113',TO_DATE('25-12-2011', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS103',TO_DATE('12-01-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS103',TO_DATE('30-02-2012', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS103',TO_DATE('11-03-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS103',TO_DATE('26-03-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS104',TO_DATE('16-01-2012', 'DD-MM-YY'), '10', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS104',TO_DATE('01-02-2012', 'DD-MM-YY'), '10', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS104',TO_DATE('30-03-2012', 'DD-MM-YY'), '30', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS129',TO_DATE('17-01-2012', 'DD-MM-YY'), '10', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS129',TO_DATE('02-03-2012', 'DD-MM-YY'), '10', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS129',TO_DATE('29-03-2012', 'DD-MM-YY'), '30', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS200',TO_DATE('07-11-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS200',TO_DATE('28-11-2011', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS200',TO_DATE('12-12-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS200',TO_DATE('22-12-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS210',TO_DATE('09-11-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS210',TO_DATE('27-01-2011', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS210',TO_DATE('13-12-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS210',TO_DATE('25-12-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS225',TO_DATE('07-11-2011', 'DD-MM-YY'), '10', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS225',TO_DATE('19-11-2011', 'DD-MM-YY'), '10', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS225',TO_DATE('28-12-2011', 'DD-MM-YY'), '30', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS235',TO_DATE('22-01-2012', 'DD-MM-YY'), '10', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS235',TO_DATE('12-02-2012', 'DD-MM-YY'), '10', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS235',TO_DATE('24-03-2012', 'DD-MM-YY'), '30', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS224',TO_DATE('22-01-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS224',TO_DATE('02-02-2012', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS224',TO_DATE('16-03-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS224',TO_DATE('21-03-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'ELE404',TO_DATE('19-01-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'ELE404',TO_DATE('03-02-2012', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'ELE404',TO_DATE('11-03-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'ELE404',TO_DATE('30-03-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS360',TO_DATE('29-10-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS360',TO_DATE('01-11-2011', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS360',TO_DATE('22-11-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS360',TO_DATE('24-12-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS339',TO_DATE('22-10-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS339',TO_DATE('02-11-2011', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS339',TO_DATE('12-11-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS339',TO_DATE('22-12-2011', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS310',TO_DATE('09-11-2011', 'DD-MM-YY'), '10', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS310',TO_DATE('22-11-2011', 'DD-MM-YY'), '10', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS310',TO_DATE('23-12-2011', 'DD-MM-YY'), '30', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS337',TO_DATE('27-01-2012', 'DD-MM-YY'), '10', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS337',TO_DATE('12-02-2012', 'DD-MM-YY'), '10', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS337',TO_DATE('20-03-2012', 'DD-MM-YY'), '30', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS041',TO_DATE('19-01-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS041',TO_DATE('03-02-2012', 'DD-MM-YY'), '15', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS041',TO_DATE('22-02-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS041',TO_DATE('30-03-2012', 'DD-MM-YY'), '15', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS306',TO_DATE('25-01-2012', 'DD-MM-YY'), '10', ); 
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS306',TO_DATE('22-02-2012', 'DD-MM-YY'), '10', );
-INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS306',TO_DATE('28-03-2012', 'DD-MM-YY'), '30', );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS111',TO_DATE('30-10-2011', 'DD-MM-YY'), '10' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS111',TO_DATE('15-11-2011', 'DD-MM-YY'), '10' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS111',TO_DATE('22-12-2011', 'DD-MM-YY'), '30' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS100',TO_DATE('30-10-2011', 'DD-MM-YY'), '10' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS100',TO_DATE('22-11-2011', 'DD-MM-YY'), '10' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS100',TO_DATE('30-12-2011', 'DD-MM-YY'), '30' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS113',TO_DATE('30-10-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS113',TO_DATE('22-11-2011', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS113',TO_DATE('01-12-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS113',TO_DATE('25-12-2011', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS103',TO_DATE('12-01-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS103',TO_DATE('30-02-2012', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS103',TO_DATE('11-03-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS103',TO_DATE('26-03-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS104',TO_DATE('16-01-2012', 'DD-MM-YY'), '10' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS104',TO_DATE('01-02-2012', 'DD-MM-YY'), '10' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS104',TO_DATE('30-03-2012', 'DD-MM-YY'), '30' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS129',TO_DATE('17-01-2012', 'DD-MM-YY'), '10' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS129',TO_DATE('02-03-2012', 'DD-MM-YY'), '10' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS129',TO_DATE('29-03-2012', 'DD-MM-YY'), '30' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS200',TO_DATE('07-11-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS200',TO_DATE('28-11-2011', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS200',TO_DATE('12-12-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS200',TO_DATE('22-12-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS210',TO_DATE('09-11-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS210',TO_DATE('27-01-2011', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS210',TO_DATE('13-12-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS210',TO_DATE('25-12-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS225',TO_DATE('07-11-2011', 'DD-MM-YY'), '10' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS225',TO_DATE('19-11-2011', 'DD-MM-YY'), '10' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS225',TO_DATE('28-12-2011', 'DD-MM-YY'), '30' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS235',TO_DATE('22-01-2012', 'DD-MM-YY'), '10' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS235',TO_DATE('12-02-2012', 'DD-MM-YY'), '10' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS235',TO_DATE('24-03-2012', 'DD-MM-YY'), '30' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS224',TO_DATE('22-01-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS224',TO_DATE('02-02-2012', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS224',TO_DATE('16-03-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS224',TO_DATE('21-03-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'ELE404',TO_DATE('19-01-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'ELE404',TO_DATE('03-02-2012', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'ELE404',TO_DATE('11-03-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'ELE404',TO_DATE('30-03-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS360',TO_DATE('29-10-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS360',TO_DATE('01-11-2011', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS360',TO_DATE('22-11-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS360',TO_DATE('24-12-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS339',TO_DATE('22-10-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS339',TO_DATE('02-11-2011', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS339',TO_DATE('12-11-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS339',TO_DATE('22-12-2011', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS310',TO_DATE('09-11-2011', 'DD-MM-YY'), '10' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS310',TO_DATE('22-11-2011', 'DD-MM-YY'), '10' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS310',TO_DATE('23-12-2011', 'DD-MM-YY'), '30' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS337',TO_DATE('27-01-2012', 'DD-MM-YY'), '10' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS337',TO_DATE('12-02-2012', 'DD-MM-YY'), '10' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS337',TO_DATE('20-03-2012', 'DD-MM-YY'), '30' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS041',TO_DATE('19-01-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS041',TO_DATE('03-02-2012', 'DD-MM-YY'), '15' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS041',TO_DATE('22-02-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS041',TO_DATE('30-03-2012', 'DD-MM-YY'), '15' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS306',TO_DATE('25-01-2012', 'DD-MM-YY'), '10' ); 
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS306',TO_DATE('22-02-2012', 'DD-MM-YY'), '10' );
+INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS306',TO_DATE('28-03-2012', 'DD-MM-YY'), '30' );
 PROMPT Finished populating Coursework table
+
+
+PROMPT populating Exam table
+--TODO: EXAM TABLE
+PROMPT finished populating Exam table
+
+
+PROMPT populting Question table
+INSERT INTO Question VALUES('1', 'What is Heller, Ortiz and Hegmann' );
+INSERT INTO Question VALUES('2', 'What is Vandervort-Goyette' );
+INSERT INTO Question VALUES('3', 'What is Eichmann Group' );
+INSERT INTO Question VALUES('4', 'What is Erdman LLC' );
+INSERT INTO Question VALUES('5', 'What is Block-Conn' );
+INSERT INTO Question VALUES('6', 'What is Christiansen Group' );
+INSERT INTO Question VALUES('7', 'What is Deckow Group' );
+INSERT INTO Question VALUES('8', 'What is Paucek Inc' );
+INSERT INTO Question VALUES('9', 'What is Grant, Stark and OReilly' );
+INSERT INTO Question VALUES('10', 'What is Gutkowski, Denesik and McDermott' );
+INSERT INTO Question VALUES('11', 'What is Schoen-Moore' );
+INSERT INTO Question VALUES('12', 'What is Klein-Reinger' );
+INSERT INTO Question VALUES('13', 'What is McGlynn LLC' );
+INSERT INTO Question VALUES('14', 'What is Stanton and Sons' );
+INSERT INTO Question VALUES('15', 'What is Schiller Inc' );
+INSERT INTO Question VALUES('16', 'What is Kuhlman Group' );
+INSERT INTO Question VALUES('17', 'What is Wuckert Inc' );
+INSERT INTO Question VALUES('18', 'What is Rolfson, Heathcote and Wiza' );
+INSERT INTO Question VALUES('19', 'What is Graham Group' );
+INSERT INTO Question VALUES('20', 'What is Hagenes, Champlin and Collier' );
+INSERT INTO Question VALUES('21', 'What is Wolf, Cassin and Jenkins' );
+INSERT INTO Question VALUES('22', 'What is Cruickshank-Kuvalis' );
+INSERT INTO Question VALUES('23', 'What is Collins-Schamberger' );
+INSERT INTO Question VALUES('24', 'What is Kuhlman, Runolfsdottir and Reynolds' );
+INSERT INTO Question VALUES('25', 'What is Cummings, Hodkiewicz and Schumm' );
+INSERT INTO Question VALUES('26', 'What is Feil, Ferry and Rempel' );
+INSERT INTO Question VALUES('27', 'What is Fay LLC' );
+INSERT INTO Question VALUES('28', 'What is Glover LLC' );
+INSERT INTO Question VALUES('29', 'What is Haag, Herzog and Prosacco' );
+INSERT INTO Question VALUES('30', 'What is Borer-Heathcote' );
+INSERT INTO Question VALUES('31', 'What is Dooley, Schuster and Paucek' );
+INSERT INTO Question VALUES('32', 'What is Borer-Franecki' );
+INSERT INTO Question VALUES('33', 'What is Hirthe, Franecki and Schultz' );
+INSERT INTO Question VALUES('34', 'What is Carroll-Langworth' );
+INSERT INTO Question VALUES('35', 'What is Bergstrom Group' );
+INSERT INTO Question VALUES('36', 'What is Watsica Group' );
+INSERT INTO Question VALUES('37', 'What is Brakus, Dooley and Bashirian' );
+INSERT INTO Question VALUES('38', 'What is Murray Inc' );
+INSERT INTO Question VALUES('39', 'What is Auer Inc' );
+INSERT INTO Question VALUES('40', 'What is Padberg, Block and Bradtke' );
+INSERT INTO Question VALUES('41', 'What is Jacobi-Thompson' );
+INSERT INTO Question VALUES('42', 'What is Fahey, White and Lakin' );
+INSERT INTO Question VALUES('43', 'What is Rohan, Parisian and Ratke' );
+INSERT INTO Question VALUES('44', 'What is McGlynn-Koss' );
+INSERT INTO Question VALUES('45', 'What is Wintheiser-Schowalter' );
+INSERT INTO Question VALUES('46', 'What is Weimann and Sons' );
+INSERT INTO Question VALUES('47', 'What is Stamm and Sons' );
+INSERT INTO Question VALUES('48', 'What is Gerhold, Hahn and Nicolas' );
+INSERT INTO Question VALUES('49', 'What is Powlowski-Bode' );
+INSERT INTO Question VALUES('50', 'What is Adams and Sons' );
+INSERT INTO Question VALUES('51', 'What is Rice-Watsica' );
+INSERT INTO Question VALUES('52', 'What is Dare-Sauer' );
+INSERT INTO Question VALUES('53', 'What is Schinner-Parisian' );
+INSERT INTO Question VALUES('54', 'What is Stehr Inc' );
+INSERT INTO Question VALUES('55', 'What is Swift-OKeefe' );
+INSERT INTO Question VALUES('56', 'What is Mraz, Conn and Beatty' );
+INSERT INTO Question VALUES('57', 'What is King and Sons' );
+INSERT INTO Question VALUES('58', 'What is Skiles Group' );
+INSERT INTO Question VALUES('59', 'What is Heidenreich Inc' );
+INSERT INTO Question VALUES('60', 'What is Jast Inc' );
+INSERT INTO Question VALUES('61', 'What is Wolff Group' );
+INSERT INTO Question VALUES('62', 'What is Waters and Sons' );
+INSERT INTO Question VALUES('63', 'What is Jaskolski-Gleichner' );
+INSERT INTO Question VALUES('64', 'What is Rosenbaum-Howe' );
+INSERT INTO Question VALUES('65', 'What is Russel, Schiller and Schiller' );
+INSERT INTO Question VALUES('66', 'What is Marquardt Group' );
+INSERT INTO Question VALUES('67', 'What is Haag, Murazik and Boehm' );
+INSERT INTO Question VALUES('68', 'What is Shields, Okuneva and Lesch' );
+INSERT INTO Question VALUES('69', 'What is Nader, Dare and Hickle' );
+INSERT INTO Question VALUES('70', 'What is Rutherford, Willms and Klocko' );
+INSERT INTO Question VALUES('71', 'What is Leffler and Sons' );
+INSERT INTO Question VALUES('72', 'What is Von, Strosin and Kris' );
+INSERT INTO Question VALUES('73', 'What is Hermann Inc' );
+INSERT INTO Question VALUES('74', 'What is Roob-Braun' );
+INSERT INTO Question VALUES('75', 'What is Cronin-Ryan' );
+INSERT INTO Question VALUES('76', 'What is Spencer, Johns and Franecki' );
+INSERT INTO Question VALUES('77', 'What is Sporer-Kuhn' );
+INSERT INTO Question VALUES('78', 'What is Waelchi-Pagac' );
+INSERT INTO Question VALUES('79', 'What is Prosacco, Bailey and Hackett' );
+INSERT INTO Question VALUES('80', 'What is Rowe, Harber and Muller' );
+INSERT INTO Question VALUES('81', 'What is Turner, Pollich and Schroeder' );
+INSERT INTO Question VALUES('82', 'What is Bednar, Ritchie and Marvin' );
+INSERT INTO Question VALUES('83', 'What is Ziemann, Batz and West' );
+INSERT INTO Question VALUES('84', 'What is Weber, Herzog and Jacobs' );
+INSERT INTO Question VALUES('85', 'What is Kreiger Inc' );
+INSERT INTO Question VALUES('86', 'What is Williamson, Moore and Kertzmann' );
+INSERT INTO Question VALUES('87', 'What is Cartwright Group' );
+INSERT INTO Question VALUES('88', 'What is Leannon-Auer' );
+INSERT INTO Question VALUES('89', 'What is Gislason, Miller and Auer' );
+INSERT INTO Question VALUES('90', 'What is Ryan-Hamill' );
+INSERT INTO Question VALUES('91', 'What is VonRueden-Donnelly' );
+INSERT INTO Question VALUES('92', 'What is Krajcik, Murphy and Muller' );
+INSERT INTO Question VALUES('93', 'What is Marquardt, Fritsch and Collins' );
+INSERT INTO Question VALUES('94', 'What is Yost-Collier' );
+INSERT INTO Question VALUES('95', 'What is Will and Sons' );
+INSERT INTO Question VALUES('96', 'What is Kuphal, Deckow and Price' );
+INSERT INTO Question VALUES('97', 'What is Emmerich Inc' );
+INSERT INTO Question VALUES('98', 'What is Sanford, Doyle and Breitenberg' );
+INSERT INTO Question VALUES('99', 'What is Zieme-Gleichner' );
+INSERT INTO Question VALUES('100', 'What is Cummings-Feest' );
+PROMPT finshed populating Question table
 
 
 
