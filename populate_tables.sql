@@ -241,21 +241,85 @@ INSERT INTO Coursework VALUES(auto_increment_cw.nextval, 'DCS306',TO_DATE('28-03
 PROMPT Finished populating Coursework table
 
 
-PROMPT populating Exam table
---TODO: EXAM TABLE
-PROMPT finished populating Exam table
+CREATE SEQUENCE auto_increment_ex
+    START WITH 1 INCREMENT BY 1 NOMAXVALUE;
+PROMPT Populating Exam table.
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS111"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS111");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS111"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', "DCS100"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS100");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS100');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS113"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS113");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS113"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS113");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS103"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS103");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS103"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS103");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS104"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS104");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS104");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS129"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS129");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS129");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS200"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS200");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS200");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS200");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS210"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS210");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS210"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', "DCS210");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100',"DCS225"); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', "DCS225");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', "DCS225");
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS235'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS235');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS235');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS224'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS224');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS224'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS224');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'ELE404'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'ELE404');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'ELE404'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'ELE404');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS360'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS360');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS360'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS360');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS339'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS339');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS339'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS339');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS310'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS310');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS310');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS337'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS337');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval,'100', 'DCS337');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS041'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS041');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS041'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS041');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS306'); 
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS306');
+INSERT INTO Exam VALUES(auto_increment_ex.nextval, '100', 'DCS306'); 
+PROMPT Finished populating Exam table
 
 
 PROMPT populting Question table
-INSERT INTO Question VALUES('1', 'What is Heller, Ortiz and Hegmann' );
-INSERT INTO Question VALUES('2', 'What is Vandervort-Goyette' );
-INSERT INTO Question VALUES('3', 'What is Eichmann Group' );
-INSERT INTO Question VALUES('4', 'What is Erdman LLC' );
-INSERT INTO Question VALUES('5', 'What is Block-Conn' );
-INSERT INTO Question VALUES('6', 'What is Christiansen Group' );
-INSERT INTO Question VALUES('7', 'What is Deckow Group' );
-INSERT INTO Question VALUES('8', 'What is Paucek Inc' );
-INSERT INTO Question VALUES('9', 'What is Grant, Stark and OReilly' );
+INSERT INTO Question VALUES('1',  'What is Heller, Ortiz and Hegmann' );
+INSERT INTO Question VALUES('2',  'What is Vandervort-Goyette' );
+INSERT INTO Question VALUES('3',  'What is Eichmann Group' );
+INSERT INTO Question VALUES('4',  'What is Erdman LLC' );
+INSERT INTO Question VALUES('5',  'What is Block-Conn' );
+INSERT INTO Question VALUES('6',  'What is Christiansen Group' );
+INSERT INTO Question VALUES('7',  'What is Deckow Group' );
+INSERT INTO Question VALUES('8',  'What is Paucek Inc' );
+INSERT INTO Question VALUES('9',  'What is Grant, Stark and OReilly' );
 INSERT INTO Question VALUES('10', 'What is Gutkowski, Denesik and McDermott' );
 INSERT INTO Question VALUES('11', 'What is Schoen-Moore' );
 INSERT INTO Question VALUES('12', 'What is Klein-Reinger' );
@@ -346,9 +410,140 @@ INSERT INTO Question VALUES('96', 'What is Kuphal, Deckow and Price' );
 INSERT INTO Question VALUES('97', 'What is Emmerich Inc' );
 INSERT INTO Question VALUES('98', 'What is Sanford, Doyle and Breitenberg' );
 INSERT INTO Question VALUES('99', 'What is Zieme-Gleichner' );
-INSERT INTO Question VALUES('100', 'What is Cummings-Feest' );
+INSERT INTO Question VALUES('100','What is Cummings-Feest' );
 PROMPT finshed populating Question table
 
+
+PROMPT Populating ExamQuestions table.
+INSERT INTO ExamQuestions VALUES( '1', '74'); 
+INSERT INTO ExamQuestions VALUES( '2', '72');
+INSERT INTO ExamQuestions VALUES( '3', '73'); 
+INSERT INTO ExamQuestions VALUES( '4', '74'); 
+INSERT INTO ExamQuestions VALUES( '5', '76');
+INSERT INTO ExamQuestions VALUES( '6', '76');
+INSERT INTO ExamQuestions VALUES( '7', '77'); 
+INSERT INTO ExamQuestions VALUES( '8', '78');
+INSERT INTO ExamQuestions VALUES( '9', '79'); 
+INSERT INTO ExamQuestions VALUES( '10', '80');
+INSERT INTO ExamQuestions VALUES( '11', '81'); 
+INSERT INTO ExamQuestions VALUES( '12', '82');
+INSERT INTO ExamQuestions VALUES( '13', '83'); 
+INSERT INTO ExamQuestions VALUES( '14', '84');
+INSERT INTO ExamQuestions VALUES( '15', '85'); 
+INSERT INTO ExamQuestions VALUES( '16', '86');
+INSERT INTO ExamQuestions VALUES( '17', '87');
+INSERT INTO ExamQuestions VALUES( '18', '88'); 
+INSERT INTO ExamQuestions VALUES( '19', '89');
+INSERT INTO ExamQuestions VALUES( '20', '90');
+INSERT INTO ExamQuestions VALUES( '21', '91'); 
+INSERT INTO ExamQuestions VALUES( '22', '92');
+INSERT INTO ExamQuestions VALUES( '23', '93'); 
+INSERT INTO ExamQuestions VALUES( '24', '94');
+INSERT INTO ExamQuestions VALUES( '25', '95'); 
+INSERT INTO ExamQuestions VALUES( '26', '96');
+INSERT INTO ExamQuestions VALUES( '27', '97'); 
+INSERT INTO ExamQuestions VALUES( '28', '98');
+INSERT INTO ExamQuestions VALUES( '29', '99'); 
+INSERT INTO ExamQuestions VALUES( '30', '100');
+INSERT INTO ExamQuestions VALUES( '31', '35');
+INSERT INTO ExamQuestions VALUES( '32', '32'); 
+INSERT INTO ExamQuestions VALUES( '33', '33');
+INSERT INTO ExamQuestions VALUES( '34', '50');
+INSERT INTO ExamQuestions VALUES( '35', '51'); 
+INSERT INTO ExamQuestions VALUES( '36', '56');
+INSERT INTO ExamQuestions VALUES( '37', '7'); 
+INSERT INTO ExamQuestions VALUES( '38', '58');
+INSERT INTO ExamQuestions VALUES( '39','59'); 
+INSERT INTO ExamQuestions VALUES( '40','60');
+INSERT INTO ExamQuestions VALUES( '41','1'); 
+INSERT INTO ExamQuestions VALUES( '42','62');
+INSERT INTO ExamQuestions VALUES( '43','63'); 
+INSERT INTO ExamQuestions VALUES( '44','64');
+INSERT INTO ExamQuestions VALUES( '45','65'); 
+INSERT INTO ExamQuestions VALUES( '46','66');
+INSERT INTO ExamQuestions VALUES( '47','67'); 
+INSERT INTO ExamQuestions VALUES( '48','68');
+INSERT INTO ExamQuestions VALUES( '49','69'); 
+INSERT INTO ExamQuestions VALUES( '50','70');
+INSERT INTO ExamQuestions VALUES( '51','71'); 
+INSERT INTO ExamQuestions VALUES( '52','72');
+INSERT INTO ExamQuestions VALUES( '53','73');
+INSERT INTO ExamQuestions VALUES( '54','74'); 
+INSERT INTO ExamQuestions VALUES( '55','75');
+INSERT INTO ExamQuestions VALUES( '56','76');
+INSERT INTO ExamQuestions VALUES( '58', '78');
+INSERT INTO ExamQuestions VALUES( '59', '79'); 
+INSERT INTO ExamQuestions VALUES( '60', '70');
+INSERT INTO ExamQuestions VALUES( '61', '71'); 
+INSERT INTO ExamQuestions VALUES( '62', '72');
+INSERT INTO ExamQuestions VALUES( '63', '73');
+PROMPT Finished populating ExamQuestions table
+
+PROMPT Populating CourseworkQuestion table.
+INSERT INTO CourseworkQuestion VALUES( '1', '1'); 
+INSERT INTO CourseworkQuestion VALUES( '2', '2');
+INSERT INTO CourseworkQuestion VALUES( '3', '3'); 
+INSERT INTO CourseworkQuestion VALUES( '4', '4'); 
+INSERT INTO CourseworkQuestion VALUES( '5', '6');
+INSERT INTO CourseworkQuestion VALUES( '6', '6');
+INSERT INTO CourseworkQuestion VALUES( '7', '7'); 
+INSERT INTO CourseworkQuestion VALUES( '8', '8');
+INSERT INTO CourseworkQuestion VALUES( '9', '9'); 
+INSERT INTO CourseworkQuestion VALUES( '10', '10');
+INSERT INTO CourseworkQuestion VALUES( '11', '11'); 
+INSERT INTO CourseworkQuestion VALUES( '12', '12');
+INSERT INTO CourseworkQuestion VALUES( '13', '13'); 
+INSERT INTO CourseworkQuestion VALUES( '14', '14');
+INSERT INTO CourseworkQuestion VALUES( '15', '15'); 
+INSERT INTO CourseworkQuestion VALUES( '16', '16');
+INSERT INTO CourseworkQuestion VALUES( '17', '17');
+INSERT INTO CourseworkQuestion VALUES( '18', '18'); 
+INSERT INTO CourseworkQuestion VALUES( '19', '19');
+INSERT INTO CourseworkQuestion VALUES( '20', '20');
+INSERT INTO CourseworkQuestion VALUES( '21', '21'); 
+INSERT INTO CourseworkQuestion VALUES( '22', '22');
+INSERT INTO CourseworkQuestion VALUES( '23', '23'); 
+INSERT INTO CourseworkQuestion VALUES( '24', '24');
+INSERT INTO CourseworkQuestion VALUES( '25', '25'); 
+INSERT INTO CourseworkQuestion VALUES( '26', '26');
+INSERT INTO CourseworkQuestion VALUES( '27', '27'); 
+INSERT INTO CourseworkQuestion VALUES( '28', '28');
+INSERT INTO CourseworkQuestion VALUES( '29', '29'); 
+INSERT INTO CourseworkQuestion VALUES( '30', '30');
+INSERT INTO CourseworkQuestion VALUES( '31', '3' );
+INSERT INTO CourseworkQuestion VALUES( '32', '32'); 
+INSERT INTO CourseworkQuestion VALUES( '33','33');
+INSERT INTO CourseworkQuestion VALUES( '34', '34');
+INSERT INTO CourseworkQuestion VALUES( '35','35'); 
+INSERT INTO CourseworkQuestion VALUES( '36','36');
+INSERT INTO CourseworkQuestion VALUES( '37','37'); 
+INSERT INTO CourseworkQuestion VALUES( '38','38');
+INSERT INTO CourseworkQuestion VALUES( '39','39'); 
+INSERT INTO CourseworkQuestion VALUES( '40','40');
+INSERT INTO CourseworkQuestion VALUES( '41','41'); 
+INSERT INTO CourseworkQuestion VALUES( '42','42');
+INSERT INTO CourseworkQuestion VALUES( '43','43'); 
+INSERT INTO CourseworkQuestion VALUES( '44','44');
+INSERT INTO CourseworkQuestion VALUES( '45','45'); 
+INSERT INTO CourseworkQuestion VALUES( '46','46');
+INSERT INTO CourseworkQuestion VALUES( '47','47'); 
+INSERT INTO CourseworkQuestion VALUES( '48','48');
+INSERT INTO CourseworkQuestion VALUES( '49','49'); 
+INSERT INTO CourseworkQuestion VALUES( '50','50');
+INSERT INTO CourseworkQuestion VALUES( '51','51'); 
+INSERT INTO CourseworkQuestion VALUES( '52','52');
+INSERT INTO CourseworkQuestion VALUES( '53','53');
+INSERT INTO CourseworkQuestion VALUES( '54','54'); 
+INSERT INTO CourseworkQuestion VALUES( '55','55');
+INSERT INTO CourseworkQuestion VALUES( '56','56');
+INSERT INTO CourseworkQuestion VALUES( '57', '57'); 
+INSERT INTO CourseworkQuestion VALUES( '58', '58');
+INSERT INTO CourseworkQuestion VALUES( '59', '59'); 
+INSERT INTO CourseworkQuestion VALUES( '60', '60');                                              
+INSERT INTO CourseworkQuestion VALUES( '61', '61'); 
+INSERT INTO CourseworkQuestion VALUES( '62', '62');
+INSERT INTO CourseworkQuestion VALUES( '63', '63');
+PROMPT Finished populating CourseworkQuestion table
 
 
 
