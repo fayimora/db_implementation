@@ -95,8 +95,7 @@ PROMPT Creating Question table
 -- Table representing Questions
 CREATE TABLE Question
         (question_id INT PRIMARY KEY,
-         question VARCHAR2(3000),
-         marks INT );
+         question VARCHAR2(3000));
 
 
 PROMPT Creating ExamQuestions table
