@@ -3,7 +3,6 @@ PROMPT Building tables. Please wait...
 
 -- Drop all tables incase any already exists
 DROP TABLE Year;
-DROP TABLE Semester;
 DROP TABLE CourseworkQuestion;
 DROP TABLE ExamQuestions;
 DROP TABLE Question;
@@ -114,11 +113,6 @@ CREATE TABLE CourseworkQuestion
          FOREIGN KEY (coursework_id) REFERENCES Coursework(coursework_id),
          FOREIGN KEY (question_id) REFERENCES Question(question_id));
 
-
-PROMPT Creating Semester table
--- Table representing Semester
-CREATE TABLE Semester
-    (semester_id INT );
 
 PROMPT Creating Year table
 -- Table representing Year
